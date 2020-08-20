@@ -2155,6 +2155,12 @@ nav {
     /* margin-left: 25px; */
 }
 
+@media (max-width:767px) {
+  .image-text{
+    overflow-wrap: break-word;
+  }
+}
+
 .banner {
   padding: 130px 0 0;
 }
@@ -2241,7 +2247,7 @@ nav {
 
 .footer-copyright {
   background : white;
-  
+  font-size: 12px;
 }
 
 .footer-icon {
