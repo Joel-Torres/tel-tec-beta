@@ -2155,10 +2155,9 @@ nav {
     /* margin-left: 25px; */
 }
 
-@media (max-width:767px) {
-  .image-text{
-    overflow-wrap: break-word;
-  }
+@media (max-width: 767px){
+.image-text {
+    font-size: 22px;
 }
 
 .banner {
