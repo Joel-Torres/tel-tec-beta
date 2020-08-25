@@ -2313,4 +2313,14 @@ nav {
     width: 30%;
   }
 }
+/* 
+.contact-form {
+  width: 90%;
+  max-width: 450px;
+} */
 
+@media (min-width:992px) {
+  .footer-content {
+    margin-left: 9em;
+  }
+}
