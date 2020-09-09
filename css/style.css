@@ -400,12 +400,12 @@ a:hover {
 .main-nav .navbar-nav .nav-item .nav-link {
   position: relative;
   text-align: center;
-  font-size: 13px;
+  font-size: 11px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
   line-height: 45px;
 }
 
@@ -2144,6 +2144,8 @@ nav {
   width: 100%;
 }
 
+
+
 .image-text {
   font-size: 30px;
   margin-bottom: 10px;
@@ -2183,7 +2185,7 @@ nav {
   .main-nav .navbar-nav .nav-item .nav-link  {
     position: relative;
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: uppercase;
     font-weight: 600;
     color: #000;
@@ -2252,6 +2254,7 @@ nav {
 
 .footer-icon {
   padding: 5px 0 0 0;
+  justify-content: space-between;
 }
 
 
@@ -2323,4 +2326,8 @@ nav {
   .footer-content {
     margin-left: 9em;
   }
+}
+
+.img-resp {
+  max-width: 100%;
 }
