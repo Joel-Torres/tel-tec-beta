@@ -11,7 +11,7 @@
                     <a class="nav-link" href="../../index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown dropdown-slide">
-                    <a class="nav-link" href="about-us.html">About Us
+                    <a class="nav-link has-sub" href="about-us.html">About Us
                         <span><i class="ti-angle-down"></i></span>
                     </a>
                     <!-- Dropdown list -->
@@ -216,3 +216,23 @@
 </div>
 
 </nav>
+
+<script>
+    $('.has-sub').on("touchstart", function (e) {
+ var submenu = $(this).find('ul').first();
+ var link = $(this); //preselect the link
+ if (link.hasClass('hover')) {
+       link.removeClass('hover');
+       $(submenu).slideUp(0);
+       e.stopPropagation()
+       return true;
+ } else {
+       $(submenu).slideDown(0);
+       link.addClass('hover');
+       e.stopPropagation();
+       return false; //extra, and to make sure the function has consistent return points
+ }
+});
+
+
+</script>
