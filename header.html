@@ -11,25 +11,26 @@
                     <a class="nav-link" href="../../index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown dropdown-slide">
-                    <a class="nav-link has-sub" href="about-us.html">About Us
+                    <a class="nav-link" href="about-us.html" data-toggle="dropdown">About Us
                         <span><i class="ti-angle-down"></i></span>
                     </a>
                     <!-- Dropdown list -->
                     <div class="dropdown-menu">
-                        <ul>
+                        <a class="dropdown-item" href="about-us.html">About Us </a>
                         <a class="dropdown-item" href="our-history.html">Our History</a>
                         <a class="dropdown-item" href="community.html">Serving Community</a>
                         <a class="dropdown-item" href="associations.html">Associations</a>
                         <a class="dropdown-item" href="guarantee.html">Customer Guarantee</a>
-                        </ul>
+                        <a class="dropdown-item" href="guarantee.html">Customer Guarantee</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-slide">
-                    <a class="nav-link" href="commercial-business.html">Commercial
+                    <a class="nav-link" href="commercial-business.html" data-toggle="dropdown">Commercial
                         <span><i class="ti-angle-down"></i></span>
                     </a>
                     <!-- Dropdown list -->
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="commercial-business.html">Commercial</a>
                         <a class="dropdown-item" href="industrial-business.html">Industrial</a>
                         <a class="dropdown-item" href="education.html">Education</a>
                         <a class="dropdown-item" href="healthcare.html">Healthcare</a>
@@ -45,21 +46,23 @@
                     <a class="nav-link" href="home-security.html">Residential</a>
                 </li>
                 <li class="nav-item dropdown dropdown-slide">
-                    <a class="nav-link" href="home-security.html">Monitoring
+                    <a class="nav-link" href="home-security.html" data-toggle="dropdown">Monitoring
                         <span><i class="ti-angle-down"></i></span>
                     </a>
                     <!-- Dropdown list -->
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="home-security.html">Monitoring</a>
                         <a class="dropdown-item" href="home-security.html">Residential</a>
                         <a class="dropdown-item" href="commercial.html">Commercial</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-slide">
-                    <a class="nav-link" href="government.html">Government
+                    <a class="nav-link" href="government.html" data-toggle="dropdown">Government
                         <span><i class="ti-angle-down"></i></span>
                     </a>
                     <!-- Dropdown list -->
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="government.html">Government</a>
                         <a class="dropdown-item" href="solutions.html">Solutions</a>
                         <a class="dropdown-item" href="contract-vehicles.html">Contract Vehicles</a>
                         <a class="dropdown-item" href="school-districts.html">School Districts</a>
@@ -68,11 +71,12 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-slide">
-                    <a class="nav-link" href="contact.html">Contact Us
+                    <a class="nav-link" href="contact.html" data-toggle="dropdown">Contact Us
                         <span><i class="ti-angle-down"></i></span>
                     </a>
                     <!-- Dropdown list -->
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
                         <a class="dropdown-item" href="leadership.html">Leadership</a>
                         <a class="dropdown-item" href="sales-team.html">Sales Team</a>
                     </div>
@@ -147,12 +151,11 @@
                 </a>
                 <!-- Dropdown list -->
                 <div class="dropdown-menu">
-                    <ul>
+                    <a class="dropdown-item" href="about-us.html">About Us</a>
                     <a class="dropdown-item" href="our-history.html">Our History</a>
                     <a class="dropdown-item" href="community.html">Serving Community</a>
                     <a class="dropdown-item" href="associations.html">Associations</a>
                     <a class="dropdown-item" href="guarantee.html">Customer Guarantee</a>
-                    </ul>
                 </div>
             </li>
             <li class="nav-item dropdown dropdown-slide">
@@ -161,6 +164,7 @@
                 </a>
                 <!-- Dropdown list -->
                 <div class="dropdown-menu">
+                    <a class="dropdown-item" href="commercial-business.html">Commercial</a>
                     <a class="dropdown-item" href="industrial-business.html">Industrial</a>
                     <a class="dropdown-item" href="education.html">Education</a>
                     <a class="dropdown-item" href="healthcare.html">Healthcare</a>
@@ -181,6 +185,7 @@
                 </a>
                 <!-- Dropdown list -->
                 <div class="dropdown-menu">
+                    <a class="dropdown-item" href="home-security.html">Monitoring</a>
                     <a class="dropdown-item" href="home-security.html">Residential</a>
                     <a class="dropdown-item" href="commercial.html">Commercial</a>
                 </div>
@@ -191,6 +196,7 @@
                 </a>
                 <!-- Dropdown list -->
                 <div class="dropdown-menu">
+                    <a class="dropdown-item" href="government.html">Government</a>
                     <a class="dropdown-item" href="solutions.html">Solutions</a>
                     <a class="dropdown-item" href="contract-vehicles.html">Contract Vehicles</a>
                     <a class="dropdown-item" href="school-districts.html">School Districts</a>
@@ -204,6 +210,7 @@
                 </a>
                 <!-- Dropdown list -->
                 <div class="dropdown-menu">
+                    <a class="dropdown-item" href="contact.html">Contact Us</a>
                     <a class="dropdown-item" href="leadership.html">Leadership</a>
                     <a class="dropdown-item" href="sales-team.html">Sales Team</a>
                 </div>
@@ -220,51 +227,3 @@
 </div>
 
 </nav>
-
-<script>
-    /*
-	By Osvaldas Valutis, www.osvaldas.info
-	Available for use under the MIT License  
-  More informations:
-  https://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly
-*/
-;(function( $, window, document, undefined )
-{
-	$.fn.doubleTapToGo = function( params )
-	{
-		if( !( 'ontouchstart' in window ) &&
-			!navigator.msMaxTouchPoints &&
-			!navigator.userAgent.toLowerCase().match( /windows phone os 7/i ) ) return false;
-		this.each( function()
-		{
-			var curItem = false;
-			$( this ).on( 'click', function( e )
-			{
-				var item = $( this );
-				if( item[ 0 ] != curItem[ 0 ] )
-				{
-					e.preventDefault();
-					curItem = item;
-				}
-			});
-			$( document ).on( 'click touchstart MSPointerDown', function( e )
-			{
-				var resetItem = true,
-					parents	  = $( e.target ).parents();
-				for( var i = 0; i < parents.length; i++ )
-					if( parents[ i ] == curItem[ 0 ] )
-						resetItem = false;
-				if( resetItem )
-					curItem = false;
-			});
-		});
-		return this;
-	};
-})( jQuery, window, document );
-$( '#nav li:has(ul)' ).doubleTapToGo();
-/*
-	VIEWPORT BUG FIX
-	iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
-*/
-;(function(e){function o(){s.content="width=device-width,minimum-scale="+i[0]+",maximum-scale="+i[1];e.removeEventListener(n,o,true)}var t="addEventListener",n="gesturestart",r="querySelectorAll",i=[1,1],s=r in e?e[r]("meta[name=viewport]"):[];if((s=s[s.length-1])&&t in e){o();i=[.25,1.6];e[t](n,o,true)}})(document);
-</script>
