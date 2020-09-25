@@ -2101,8 +2101,15 @@ nav {
 }
 
 .banner-text {
+  font-size: 28px;
+  color: #a77877;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.banner-sub {
   font-size: 18px;
-  color: black;
+  color: #a77877;
   /* font-weight: 600; */
   margin-top: 10px;
 }
@@ -2221,7 +2228,11 @@ nav {
   }
 
   .banner-text {
-    font-size: xx-small;
+    font-size: 22px;
+  }
+
+  .banner-sub {
+    font-size: 16px;
   }
 }
 
