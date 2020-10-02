@@ -2254,6 +2254,7 @@ nav {
   color: white;
 }
 
+
 .footer-link a{
   color: white;
 }
@@ -2335,8 +2336,19 @@ nav {
 
 @media (min-width:992px) {
   .footer-content {
-    margin-left: 9em;
+    margin-left: 4em;
   }
+}
+
+@media (max-width: 767px) {
+  .footer-link li {
+    margin-left: -4em;
+  }
+}
+
+.divider {
+  border-bottom: 1px solid white;
+  margin-bottom: 1em;
 }
 
 .img-resp {
