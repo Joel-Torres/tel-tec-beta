@@ -2250,7 +2250,11 @@ nav {
   width: 95%;
 }
 
-.page-footer p, h5 {
+.page-footer p {
+  color: white;
+}
+
+.page-footer h5 {
   color: white;
 }
 
